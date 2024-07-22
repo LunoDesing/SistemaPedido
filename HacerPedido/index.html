@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <title>Pedidos</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <h1 class="header__title">          
+            <img class="header__logo" src="assets/imagenes/LOGO.webp" alt=""><span class="title__span">El amor puede esperar.. el hambre no! </span><br>Haz tu pedido</h1>
+
+
+    </header>
+
+    <main>
+
+
+        <div id="referencia"></div>
+
+        <section class="tutorial">
+            <button class="tutorial__btn">¿Como hago mi pedido?</button>
+            <div class="tutorial__overlay" id="tutorialOverlay">
+                <div class="tutorial__content">
+                    <!-- Aquí va tu imagen y el botón para cerrar -->
+                    <img src="assets/imagenes/tutorial local.webp" alt="Tutorial Image">
+                    <button class="tutorial__close-btn" id="closeTutorial">Cerrar</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="categorias">
+
+            <h2 class="categorias__title">Categorías</h2>
+
+            <div class="categoria">
+
+                <button id="todo" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconTODO.svg" alt="">Todo</button>
+                <button id="empanadas" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconEMPANADA.svg" alt="">Empanadas</button>
+                <button id="pizzas" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconPIZZA.svg" alt="">Pizzas</button>
+                <button id="sandwiches" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconTACOS.svg" alt="">Sandwiches</button>
+                <button id="bebidas" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconBEBIDAS.svg" alt="">Bebidas</button>
+
+            </div>
+        </section>
+
+
+        <section class="comidas" id="empanadas">
+
+            <div class="comida">
+                <h4 class="comida__name">Empanada de Carne</h4>
+                <p class="comida__precio">$350</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/empanada1.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <div class="comida">
+                <h4 class="comida__name">Empanada de Pollo</h4>
+                <p class="comida__precio">$350</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/empanada2.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+        </section>
+
+        <section class="comidas" id="pizzas">
+
+            <div class="comida">
+                <h4 class="comida__name">Pizza fugazzeta</h4>
+                <p class="comida__precio">$2400</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/pizzaFugazzeta.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <div class="comida">
+                <h4 class="comida__name">Pizza Peperoni</h4>
+                <p class="comida__precio">$2600</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/pizzaPeperoni.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+        </section>
+
+        <section class="comidas" id="sandwiches">
+
+            <div class="comida">
+                <h4 class="comida__name">Sandwich de milanesa</h4>
+                <p class="comida__precio">$2600</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/sandMila.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <div class="comida">
+                <h4 class="comida__name">Sandwich de Pollo</h4>
+                <p class="comida__precio">$2400</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/sandPollo.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+        </section>
+
+        <section class="comidas" id="bebidas">
+
+            <div class="comida">
+                <h4 class="comida__name">Coca Cola x500cc</h4>
+                <p class="comida__precio">$1500</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/coca.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <div class="comida">
+                <h4 class="comida__name">Mirinda Naranja x500cc</h4>
+                <p class="comida__precio">$1400</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/mirinda.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <div class="comida">
+                <h4 class="comida__name">Paso de los toros x500cc</h4>
+                <p class="comida__precio">$1200</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/pasoToros.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <div class="comida">
+                <h4 class="comida__name">Sprite x500cc</h4>
+                <p class="comida__precio">$1600</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/comidas/sprite.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <input class="comidas__inputNumber" type="number">
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+        </section>
+
+        
+        <div class="mensaje__popup">
+            <h3 class="mensaje__emergente">¡Pedido agregado!</h3>
+
+            <p class="mensaje__detalle">ABAJO</p>
+            <p class="mensaje__detalle2">EL DETALLE DE TU PEDIDO</p>
+
+            <div class="arrow">
+                <span></span>
+            </div>
+
+        </div>
+
+
+        <section class="pedido">
+            <h2>Detalle del Pedido</h2>
+            <div class="line"></div>
+            <div class="pedido__container">
+                <!-- Aquí se añadirán dinámicamente los pedidos -->
+            </div>
+            <p id="total" class="total__pedido">TOTAL:</p>
+
+            <button class="pedido__confirmar" id="pedido__confirmar">Confirmar Pedido</button>
+
+            <!-- Nuevo lightbox para confirmación de pedido -->
+            <div id="nuevo-lightbox" class="nuevo-lightbox" style="display: none;">
+                <div class="lightbox-content">
+                    <span id="cerrar-lightbox" class="cerrar-lightbox">Cerrar</span>
+                    <h3 class="confirmacion__title">En breve te lo llevamos a tu mesa</h3>
+                    <div id="lightboxDetalle" class="confirmacion-detalle-nuevo">
+                        <!-- Aquí se mostrarán dinámicamente los detalles del pedido -->
+                    </div>
+                    <div class="inputs-confirmacion">
+                        <div class="pedidoNumber">
+                            <label class="pedido_labels" for="mesa-nuevo">¿En qué mesa estás?</label>
+                            <input type="text" id="mesa-nuevo" name="mesa-nuevo" class="input__text input__text2"
+                                required>
+                        </div>
+                        <label class="pedido_labels" for="nombre-nuevo">Tu Nombre</label>
+                        <input type="text" id="nombre-nuevo" name="nombre-nuevo" class="input__text" placeholder="quien recibe el pedido" required>
+                        <label class="pedido_labels" for="mensaje-nuevo">¿Cómo quieres que lo preparemos?</label>
+                        <textarea id="mensaje-nuevo" name="mensaje-nuevo" class="input__text" rows="4" placeholder="explicanos como quieres que te preparemos tu pedido"></textarea>
+                        <button class="pedido__enviar" id="pedido__enviar-nuevo">Enviar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+
+            <img class="footer__img" src="assets/vectores/LOGO.svg" alt="">
+
+            <div class="footer__social">
+                <h5 class="footer__title">Sigueme en mis redes</h5>
+                <div class="footer__icons">
+                    <img class="footer__icon" src="assets/imagenes/face.webp" alt="">
+                    <img class="footer__icon" src="assets/imagenes/insta.webp" alt="">
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- <section class="mapa">
+            <h4 class="mapa__title">Dónde estamos?</h4>
+            <iframe class="mapa__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1884410695884!2d-65.21304492549451!3d-26.833958089916035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0d894110f3%3A0x7759f79584b2ea02!2sSandwicher%C3%ADa%20y%20cafeter%C3%ADa%20TUTTI%20barrio%20sur!5e0!3m2!1ses-419!2sar!4v1721475497344!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <a class="mapa__cta" href="">ver Ubicación</a> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
